@@ -1,6 +1,6 @@
 entrada = "Agendar com José reunião às 10:00 amanhã #trabalho, email: jose.da-silva@sp.senac.br, https://sp.senac.br/pag1#teste?aula=1&teste=4"
 
-data = /([0-3]\d\sde\s[A-z]+(\sde\s\d{4})?)|([0-3]\d\/[0-3]\d(\/\d{4})?)|(amanhã|depois de amanhã)/.match(entrada)
+data = /([0-3]\d\sde\s[A-z]+(\sde\s\d{4})?)|([0-3]\d\/[0-3]\d(\/\d{4})?)|(hoje|amanhã|depois de amanhã)/.match(entrada)
 
 horario = /([0-2]?[0-9](\s|:)[0-9]{2}\s?(horas|hora|h)?)|([0-9]{1,2}\s?(horas|hora|h))|(ás\s[0-9]{1,2})/.match(entrada)
 
